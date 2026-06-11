@@ -147,7 +147,7 @@ a:focus {
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 800;
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-size: clamp(1.7rem, 4.2vw, 3rem);
   line-height: 1.15;
   color: var(--color-navy);
   letter-spacing: -0.01em;
@@ -161,11 +161,18 @@ a:focus {
 }
 
 .hero-byline {
-  margin: 0;
+  margin: 0 0 0.3rem;
   font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  letter-spacing: 0.04em;
+}
+
+.hero-meta {
+  margin: 0;
+  font-size: 0.9rem;
   color: var(--color-ink-soft);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 /* ---------------------------------------------------------
@@ -402,7 +409,7 @@ section[aria-labelledby] > .h1:first-child {
   }
 
   .hero-title {
-    font-size: clamp(2rem, 9vw, 3rem);
+    font-size: clamp(1.5rem, 7vw, 2.2rem);
   }
 
   .article-body {
