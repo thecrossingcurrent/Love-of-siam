@@ -133,7 +133,7 @@ a:focus {
 
 .hero-text {
   min-width: 0;
-  max-width: 38rem;
+  max-width: 46rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -142,8 +142,8 @@ a:focus {
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 800;
-  font-size: clamp(1.7rem, 3vw, 2.8rem);
-  line-height: 1.18;
+  font-size: clamp(1.4rem, 2.6vw, 2.4rem);
+  line-height: 1.25;
   color: var(--color-navy);
   letter-spacing: -0.01em;
   text-align: center;
@@ -177,11 +177,6 @@ a:focus {
   letter-spacing: 0.03em;
 }
 
-.byline-date {
-  color: var(--color-ink-soft);
-  font-style: italic;
-}
-
 .byline-author {
   font-weight: 600;
   color: var(--color-navy);
@@ -193,6 +188,11 @@ a:focus {
 
 .byline-time {
   color: var(--color-ink-soft);
+}
+
+.byline-date {
+  color: var(--color-ink-soft);
+  font-style: italic;
 }
 
 /* (hero image removed — figure styles no longer used) */
@@ -440,7 +440,7 @@ section[aria-labelledby] > .h1:first-child {
   }
 
   .hero-title {
-    font-size: clamp(1.5rem, 7vw, 2.2rem);
+    font-size: clamp(1.3rem, 7vw, 1.9rem);
   }
 
   .hero-chapeau {
