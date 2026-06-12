@@ -95,51 +95,44 @@ a:focus {
 }
 
 /* ---------------------------------------------------------
-   Header
+   Hero — New Yorker–style two-column feature
    --------------------------------------------------------- */
 
-.site-header {
-  border-bottom: 1px solid var(--color-border);
-  background: var(--color-cream);
+/* Section kicker / chuyên mục */
+.hero-kicker-wrap {
+  margin: var(--space-6) 0 var(--space-5);
+  padding: 0 var(--space-4);
+  text-align: center;
 }
 
-.header-inner {
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 1.25rem var(--space-3);
-}
-
-.masthead {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  text-decoration: none;
-  color: var(--color-navy);
-}
-
-.masthead-mark {
-  display: block;
-  width: 28px;
-  height: 3px;
-  background: var(--color-navy);
-}
-
-.masthead-text {
+.hero-kicker {
+  margin: 0;
   font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.35rem;
+  letter-spacing: 0.12em;
+  color: #984447;
 }
 
-/* ---------------------------------------------------------
-   Hero
-   --------------------------------------------------------- */
+.hero-kicker-rule {
+  width: 48px;
+  height: 1px;
+  background: #984447;
+  opacity: 0.55;
+  margin: var(--space-2) auto 0;
+}
 
 .hero {
   max-width: var(--measure-wide);
   margin: 0 auto;
-  padding: var(--space-6) var(--space-3) var(--space-4);
+  padding: var(--space-3) var(--space-4) var(--space-5);
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  min-width: 0;
   text-align: center;
 }
 
@@ -147,10 +140,22 @@ a:focus {
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 800;
-  font-size: clamp(1.7rem, 4.2vw, 3rem);
-  line-height: 1.15;
+  font-size: clamp(2rem, 3.4vw, 3.3rem);
+  line-height: 1.12;
   color: var(--color-navy);
   letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.hero-chapeau {
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--color-ink-soft);
+  text-align: center;
 }
 
 .hero-rule {
@@ -161,19 +166,34 @@ a:focus {
 }
 
 .hero-byline {
-  margin: 0 0 0.3rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--color-navy);
-  letter-spacing: 0.04em;
-}
-
-.hero-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.55rem;
   margin: 0;
   font-size: 0.9rem;
-  color: var(--color-ink-soft);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
+
+.byline-date {
+  color: var(--color-ink-soft);
+  font-style: italic;
+}
+
+.byline-author {
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.byline-sep {
+  color: var(--color-border);
+}
+
+.byline-time {
+  color: var(--color-ink-soft);
+}
+
+/* (hero image removed — figure styles no longer used) */
 
 /* ---------------------------------------------------------
    Article body
@@ -196,11 +216,11 @@ a:focus {
 .article-body section:first-of-type > p:first-of-type::first-letter {
   font-family: var(--font-serif);
   font-weight: 800;
-  font-size: 3.4rem;
-  line-height: 0.85;
+  font-size: 5.3rem;
+  line-height: 0.78;
   float: left;
-  padding-right: 0.1em;
-  padding-top: 0.05em;
+  padding-right: 0.08em;
+  padding-top: 0.02em;
   color: var(--color-navy);
 }
 
@@ -404,12 +424,33 @@ section[aria-labelledby] > .h1:first-child {
     font-size: 17px;
   }
 
+  .hero-kicker-wrap {
+    margin-top: var(--space-5);
+    padding: 0 var(--space-2);
+  }
+
+  .hero-kicker {
+    font-size: 1.1rem;
+  }
+
   .hero {
-    padding: var(--space-5) var(--space-2) var(--space-3);
+    padding: var(--space-3) var(--space-2) var(--space-3);
   }
 
   .hero-title {
     font-size: clamp(1.5rem, 7vw, 2.2rem);
+  }
+
+  .hero-chapeau {
+    font-size: 1.1rem;
+  }
+
+  .hero-rule {
+    margin: var(--space-3) auto;
+  }
+
+  .article-body section:first-of-type > p:first-of-type::first-letter {
+    font-size: 4.6rem;
   }
 
   .article-body {
