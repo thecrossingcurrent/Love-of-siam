@@ -133,6 +133,8 @@ a:focus {
 
 .hero-text {
   min-width: 0;
+  max-width: 38rem;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -140,8 +142,8 @@ a:focus {
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 800;
-  font-size: clamp(2rem, 3.4vw, 3.3rem);
-  line-height: 1.12;
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+  line-height: 1.18;
   color: var(--color-navy);
   letter-spacing: -0.01em;
   text-align: center;
