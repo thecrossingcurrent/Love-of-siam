@@ -160,19 +160,12 @@ a:focus {
   text-align: center;
 }
 
-.hero-rule {
-  width: 90px;
-  height: 3px;
-  background: var(--color-rule);
-  margin: var(--space-3) auto;
-}
-
 .hero-byline {
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 0.55rem;
-  margin: 0;
+  margin: var(--space-3) 0 0;
   font-size: 0.9rem;
   letter-spacing: 0.03em;
 }
@@ -445,10 +438,6 @@ section[aria-labelledby] > .h1:first-child {
 
   .hero-chapeau {
     font-size: 1.1rem;
-  }
-
-  .hero-rule {
-    margin: var(--space-3) auto;
   }
 
   .article-body section:first-of-type > p:first-of-type::first-letter {
